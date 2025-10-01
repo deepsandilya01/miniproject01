@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica-reguler;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid black;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 0, 0, 0.354),
+    #fff 70%,
+    rgba(255, 0, 0, 0.354)
+  );
+}
+#topnevigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+#topnevigation a {
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+#main > h1 {
+  font-size: 25vw; /* viewport width divice according */
+  padding-left: 5%;
+  font-weight: 100;
+  margin-top: -3.5%;
+}
+#btmleft {
+  width: 200px;
+  position: absolute;
+  bottom: 9vw;
+  left: 2.5%;
+}
+
+#btmleft h3 {
+  font-size: 20px;
+}
+
+#btmleft p {
+  font-size: 15px;
+  margin-top: 0.36vw;
+}
+
+#btmleft #materials {
+  margin-top: 40px;
+}
+#btmbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  font-size: larger;
+  padding: 1.04vw 2.5vw;
+  bottom: 0;
+  left: 0;
+}
+
+#btmbar a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; /* Hand ka symbol force karne ke liye */
+}
+
+#main > img {
+  position: absolute;
+  border-radius: 5px;
+  height: auto;
+  width: 15vw;
+}
+
+#img1 {
+  left: 48vw;
+  top: 26vw;
+}
+#img2 {
+  left: 35vw;
+  top: 23vw;
+}
+#img3 {
+  left: 60vw;
+  top: 19.5vw;
+}
+
+/* add onother way*/
+@media (max-width: 768px) {
+  /* tablets/mobile */
+  #img1 {
+    width: 40vw;
+    left: 50vw;
+    top: 25vw;
+  }
+  #img2 {
+    width: 35vw;
+    left: 27vw;
+    top: 34vw;
+  }
+  #img3 {
+    width: 30vw;
+    left: 40vw;
+    top: 42vw;
+  }
+}
