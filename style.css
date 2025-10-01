@@ -40,6 +40,7 @@ body {
   padding-left: 5%;
   font-weight: 100;
   margin-top: -3.5%;
+  pointer-events: none; /* ye line add karo */
 }
 #btmleft {
   width: 200px;
